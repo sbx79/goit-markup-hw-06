@@ -7,10 +7,16 @@
     --secondary-text-color:#757575;
     --white-text-color: #ffffff;
     --secondary-background: #F5F4FA;
-    --border-color:#ECECEC;
+    --border-color: #ECECEC;
     --footer-contact-color: rgba(255, 255, 255, 0.6);
     --timmer: 250ms;
     --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --black-color: #000000;
+    --background-color: #2F303A;
+    --button-hover-color: #1976D2;
+    --background-button-color: #F5F4FA;
+    --portfolio-background-color: #E5E5E5;
+    --card-gap: 30px;
 }
 
 
@@ -542,6 +548,73 @@ header{
 }
 /* Find us section end */
 
+/* Newsletter section start */
+.newsletter-section {
+    margin-left: 93px;
+}
+
+.newsletter-title {
+    font-size: 14px;
+    line-height: calc(16/14);
+    color: var(--white-text-color);
+    margin-bottom: 20px;
+}
+
+.newsletter-container {
+    margin-left: 93px;
+}
+
+.newsletter-form {
+    display: flex;
+}
+
+.newsletter-lable {
+    margin-right: 12px;
+}
+
+.newsletter-input {
+    padding: 15px;
+    width: 358px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    outline: none;
+}
+
+.newsletter-input:hover, .newsletter-input:focus {
+    color: var(--white-text-color);
+    background-color: transparent;
+    border-color: var(--white-text-color);
+}
+
+.newsletter-button {
+    font-size: 16px;
+    font-family: 'Roboto';
+    cursor: pointer;    
+    width: 200px;
+    height: 50px;
+    border: none;
+    padding: 10px 28px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+    color:var(--white-text-color);
+}   
+
+.newsletter-button:hover, .newsletter-button:focus {
+    background-color: var(--button-hover-color);
+}
+
+.send-icon {
+    margin-left: 30px;
+}
+
+.footer-button:hover, .footer-button:focus {
+    background-color: var(--button-hover-color);
+}
 /* Portfolio page common section start */
 
 .portfolio-section {
@@ -720,5 +793,161 @@ header{
 
 .modal-button:hover, .modal-button:focus {
     background-color: var(--accent-color);
+}
+
+.modal-title {
+    padding-top: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23/20);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:var(--main-text-color);
+    margin-bottom: 12px;
+}
+
+.modal-input {
+    margin-top: 4px;
+    width: 406px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: var(--border-color) var(--timer) var(--timing-function);
+    cursor: pointer;
+    padding-left: 42px;    
+}
+
+.modal-input-comment {
+    padding: 12px 16px;
+    box-sizing: border-box;
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.modal-form {
+    width: 448px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.modal-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14/12);
+    letter-spacing: 0.01em;
+    color: var(--main-text-color);
+    margin-bottom: 4px;
+}
+
+.modal-input:hover, .modal-input:focus, .modal-input-comment:hover, .modal-input-comment:focus {
+    border-color: #2196F3;
+    outline: none;
+}
+
+.modal-label:hover, .modal-label:focus, .modal-icon:hover, .modal-icon:focus {
+    color: #2196F3;
+    fill: currentColor;
+}
+
+.modal-label:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.modal-submit-button {
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    border: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+}
+
+.modal-submit-button:hover, .modal-submit-button:focus {
+    background-color: #1976D2;
+}
+
+.modal-agree {
+    position: relative;
+    width: 448px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+
+.modal-icon {
+    position: absolute;
+    top: 50%;
+    margin-left: 12px;
+    fill: black;
+}
+
+.checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.modal-checkbox-label {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    cursor: pointer;
+}
+
+.modal-checkbox {
+    width: 16px;
+    height: 15px;
+    border: 1px solid var(--black-color);
+    border-radius: 2px;
+    margin-right: 8px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: auto 100%;
+}
+
+.checkbox:checked + .modal-checkbox-label > .modal-checkbox {
+    background-color: var(--accent-color);
+    border-color: white;
+}
+
+.terms-condition, .terms-condition-link:visited {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: var(--main-title-color);
 }
 /* Modal section end */
