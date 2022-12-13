@@ -15,8 +15,7 @@
     --background-color: #2F303A;
     --button-hover-color: #1976D2;
     --background-button-color: #F5F4FA;
-    --portfolio-background-color: #E5E5E5;
-    --card-gap: 30px;
+    --portfolio-background-color: #E5E5E5;    
 }
 
 
@@ -786,7 +785,7 @@ header{
     height: 30px;
     border-radius: 50%;
     float: right;
-    background: #ffffff;
+    background: #ffffff;    
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: var(--timer) var(--timing-function);
 }
@@ -845,16 +844,16 @@ header{
     font-size: 12px;
     line-height: calc(14/12);
     letter-spacing: 0.01em;
-    color: var(--main-text-color);
+    color: var(--secondary-text-color);
     margin-bottom: 4px;
 }
 
 .modal-input:hover, .modal-input:focus, .modal-input-comment:hover, .modal-input-comment:focus {
     border-color: #2196F3;
-    outline: none;
+    outline: none;    
 }
 
-.modal-label:hover, .modal-label:focus, .modal-icon:hover, .modal-icon:focus {
+.modal-label:hover .modal-icon, .modal-label:focus .modal-icon {
     color: #2196F3;
     fill: currentColor;
 }
@@ -878,21 +877,13 @@ header{
     align-items: center;
     letter-spacing: 0.06em;
     color: var(--white-text-color);
-    background-color: var(--accent-color);
+    background-color: var(--accent-color);  
+    transition: background-color var(--timmer) var(--timing-function);
 }
 
 .modal-submit-button:hover, .modal-submit-button:focus {
     background-color: #1976D2;
-}
-
-.modal-agree {
-    position: relative;
-    width: 448px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24/14);
-    letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .modal-icon {
@@ -911,7 +902,7 @@ header{
     padding: 0;
     white-space: nowrap;
     clip-path: inset(100%);
-    clip: rect(0 0 0 0);
+    clip: rect(0px, 0px, 0px, 0px);
     overflow: hidden;
 }
 
